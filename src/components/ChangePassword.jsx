@@ -13,7 +13,7 @@ const ChangePassword = () => {
     setMessage("")
 
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: "http://localhost:5173/updatepassword", // update with your URL
+      redirectTo: "https://study-metrila-hub.vercel.app/updatepassword", // update with your URL
     })
 
     if (error) {
