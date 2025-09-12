@@ -1,0 +1,700 @@
+/* signup page  */
+
+.loginsidetext{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 70px;
+}
+
+.loginsidetext h1{
+    letter-spacing: 2px;
+    margin: 25px 0px ;
+    color:#F02F34; 
+}
+
+.loginsidetext p{
+    color: rgb(65, 65, 65);
+}
+
+.signuppageDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+.signupdivTitle{
+    
+    width: 700px;
+    padding-left: 130px;
+   
+}
+
+.signupdivform{
+   
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.signupdivforminputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 440px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 15px rgb(104, 103, 103);
+}
+
+.signupdivforminputs h1{
+    font-size: larger;
+}
+
+.signupdivforminputs p{
+     color: rgb(81, 75, 75);
+     font-size: 12px;
+     margin: 6px 0px ;
+}
+
+.signupdivforminputs input{
+    width: 400px;
+    border: 1px solid rgb(152, 150, 150);
+    padding: 12px 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 6px 0px;
+}
+
+.signupdivforminputs button{
+    color: rgb(251, 250, 250);
+    background-color:#000000;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.signupdivforminputs span{
+    color: red;
+    font-size: 13px;
+}
+
+/* login page */
+
+.loginpagediv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color : rgb(250, 250, 250);
+    flex-wrap: wrap;
+}
+.signupdivforminputs{
+    position: relative;
+}
+
+.Walkinganimestyle{
+    position: absolute;
+    top: -85px;
+    right: -50px;
+    height: 120px;
+}
+
+/* changepassword page */
+
+.changepasswordpagediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(250, 250, 250);
+    height: 100vh;
+}
+
+.gradient-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #fc6b03, #d60b0b);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jumingAnm{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+
+
+/* navbar */
+
+.Navbar{
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+  height: 17vh;
+}
+
+.Navbar div{
+  display: flex;
+  gap: 20px;
+}
+
+.userName{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.nav-links {
+  gap: 4rem;
+  font-size: 1.2rem;
+}
+
+.nav-links-mobile {
+    border: 1px solid rgb(4, 4, 4);
+    padding: 30px;
+    position: absolute;
+    bottom: -250px;
+    z-index: 1;
+    background-color: white;
+    left: 25px;
+}
+
+.display_mobile{
+     display: none !important;
+}
+.nav-menu{
+    display: none !important;
+    position: relative;
+}
+.nav-links-mobile div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    position: relative;
+}
+
+.links:hover {
+  color: rgb(0, 0, 0);
+  text-underline-offset: 1rem;
+}
+
+.Navbar input{
+    width: 250px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid rgb(28, 28, 28);
+}
+
+.logoutBtn{
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0; 
+    background: linear-gradient(90deg, #fc6b03, #d60b0b);
+    transition: width 0.3s ease; 
+    border-radius: 2px;
+}
+.links.active::after {
+  width: 100%; 
+}
+
+
+/* login page resopnsive */
+
+.title-none{
+    display: none;
+}
+
+
+@media (max-width: 1410px) {
+    .signupdivTitle{
+     width: 500px;
+     padding-left: 30px;
+    }
+
+}
+
+
+@media (max-width: 1205px) {
+    .signupdivTitle{
+        width: 400px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    
+    .signupdivTitle {
+        display: none;
+    }
+    .signupdivform{
+        /* height: 100vh; */
+        text-align: center;
+    }
+
+    .title-none{
+        display: block;
+        margin-top: 50px;
+    }
+
+    .nav-links {
+        gap: 2rem;
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (max-width : 840px){
+   .nav-links{
+    display: none !important;
+   }
+   
+   .nav-menu{
+    display: block !important;
+   }
+
+}
+
+
+/* admin page style */
+.Admin_title{
+    margin-left: 50px;
+
+}
+.adminContiner{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.AdminSideNav{
+    width: 230px;
+    border-right: 1px solid rgb(0, 0, 0);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.AdminInfoDiv{
+    width: 1000px;
+    margin-top: 20px;
+}
+
+/* admin page media */
+
+@media (max-width: 1250px){
+    .AdminInfoDiv{
+        width: 800px;
+    }
+
+}
+
+@media (max-width: 1110px){
+    .AdminInfoDiv{
+        max-width: 500px;
+    }
+
+    .AdminSideNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 50px;
+        border-right: none;
+        border-bottom: 2px solid black ;
+        width: 500px;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+}
+
+
+/* admin page table styles */
+
+.userTable {
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.userTable table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.userTable thead {
+  background: #f4f4f4;
+}
+
+.userTable th,
+.userTable td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.userTable th {
+  font-weight: bold;
+  color: #333;
+}
+
+.userTable tr:hover {
+  background: #f9f9f9;
+}
+
+.userTable tr:last-child td {
+  border-bottom: none;
+}
+
+.signuppageDivMargenTop{
+    margin-top: 30px;
+}
+
+.delectAccountBtn{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 18px;
+}
+
+.uplodeFormDiv{
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uplodeForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 8px 15px rgb(98, 98, 98);
+    gap: 25px;
+    height: 490px;
+    padding-top: 50px;
+    width: 450px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+ #fileinp {
+    color: black;
+    font-size: 14px;
+    border: 1px solid rgb(88, 88, 88);
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 55px;
+  }
+
+  /* Style the choose file button (works in most browsers) */
+  #fileinp::file-selector-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  #fileinp::file-selector-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+
+  /* For Safari/older browsers */
+  #fileinp::-webkit-file-upload-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  #fileinp::-webkit-file-upload-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+
+.uplodeForm input{
+    width: 80%;
+    font-size: 14px;
+    border: 1px solid rgb(88, 88, 88);
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.uplodeForm button{
+    color: rgb(251, 250, 250);
+    background-color:#000000;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.uplodeForm #semester{
+    width: 100px;
+    padding: 10px 10px;
+}
+
+.walkingAnimeInUplode{
+    position: absolute;
+    top: -86px;
+    right: -70px;
+    width: 230px;
+}
+
+.pdfCardsmainDev{
+    height: 100%;
+    margin: 20px;
+}
+
+.searchInp{
+    text-align: center;
+}
+.searchInp input{
+    width: 400px;
+    padding: 15px;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.pdfCards{
+    width: 300px;
+    box-shadow: 0px 8px 15px rgb(101, 101, 101);
+    padding:30px 20px;
+    margin-top: 30px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.fileDiv{
+    width: 100%;
+    height: 180px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.fileInfo{
+    text-align: center;
+}
+
+.fileInfo h2{
+    text-transform: capitalize;
+    color: #2e2e2e;
+}
+
+.subjectName{
+    width: 100%;
+    height: 40px;
+    padding: 4px;
+    overflow: hidden;
+}
+
+.fileInfo p{
+    margin: 10px;
+}
+
+.fileInfo p span{
+    margin: 9px;
+    color: rgb(42, 42, 42);
+    text-transform: capitalize;
+}
+
+.fileInfo button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.pdfCardsGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,350px);
+    justify-content: center;
+}
+
+.filterdSection{
+    padding: 10px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.filterbtn{
+    padding: 10px 15px ;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.uplodeForm span{
+    color: red;
+    font-size: 14px;
+}
+
+.searchAndFilters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.timeDisplay{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+/* about page styleing */
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  line-height: 1.8;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: slideDown 0.8s ease;
+}
+
+.about-text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #d60b0b;
+}
+
+.about-section {
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.about-section:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.about-section:nth-child(4) {
+  animation-delay: 0.7s;
+}
+.about-section:nth-child(5) {
+  animation-delay: 0.9s;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #fc6b03;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.pdfCards {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
