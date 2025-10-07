@@ -76,7 +76,6 @@ const SignUp = () => {
         }
 
 
-
     }
 
 

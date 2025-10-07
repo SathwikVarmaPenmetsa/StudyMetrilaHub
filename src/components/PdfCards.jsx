@@ -238,7 +238,7 @@ const PdfCards = () => {
                   </button>
                 ) : null}
               </div>
-              <p className="timeDisplay">{timeAgo(file.created_at)}</p>
+              <p className="timeDisplay">{timeAgo(file.uploaded_at)}</p>
             </div>
           ))
         ) : loading ? (
